@@ -2,7 +2,7 @@
   "profile": "openai",
   "env": {
     "OPENAI_BASE_URL": "https://integrate.api.nvidia.com/v1",
-    "OPENAI_MODEL": "stepfun-ai/step-3.5-flash",
+    "OPENAI_MODEL": "z-ai/glm-5.1",
     "OPENAI_API_KEY": "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"
   },
   "createdAt": "2026-04-26T12:01:28.474Z"

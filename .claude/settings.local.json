@@ -3,7 +3,10 @@
     "allow": [
       "Bash(curl:*)",
       "Bash(git add:*)",
-      "Bash(git commit -m \"Corrige MIME type do Service Worker no Vercel:*)"
+      "Bash(git commit -m \"Corrige MIME type do Service Worker no Vercel:*)",
+      "Bash(git push:*)",
+      "Bash(git branch:*)",
+      "Bash(git commit -m \"Restaura tema escuro fixo \\(preto/branco\\):*)"
     ]
   }
 }
