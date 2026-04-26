@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema de controle de vendas multi-loja Miplace - Acesse sua loja e gerencie vendas">
+  <meta name="keywords" content="controle de vendas, miplace, lojas, vendas">
+  <meta name="author" content="Miplace">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Controle de Vendas - Miplace">
+  <meta property="og:description" content="Selecione sua loja Miplace e acesse o sistema de controle de vendas">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/Prime.png">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#000000">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/Prime.png">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Controle Vendas">
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Controle de Vendas - Miplace",
+    "description": "Sistema de controle de vendas multi-loja Miplace",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://controle-de-vendas.vercel.app",
+    "author": {
+      "@type": "Organization",
+      "name": "Miplace",
+      "url": "https://miplace.com.br"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    }
+  }
+  </script>
+
+  <!-- Preconnect para CDNs externos -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Controle de Vendas - Selecione sua Loja</title>
+
+  <!-- Fontes Google (apenas CSS, sem JS) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Local -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Ghost Grid Canvas Background -->
+<canvas id="ghostGrid"></canvas>
+
+<!-- Main Content -->
+<main id="main-content">
+  <!-- Header Principal -->
+  <header class="page-header animate-fade-in-up">
+    <h1>Controle de Vendas</h1>
+    <p>Selecione sua Loja</p>
+  </header>
+
+  <!-- Grid de Lojas -->
+  <div class="stores-grid">
+
+    <!-- Linha Superior -->
+    <div class="stores-row">
+      <a href="https://controle-de-vendas-xv.vercel.app" class="store-link animate-bounce-in delay-100" data-store="prime" aria-label="Acessar Miplace Prime" target="_blank" rel="noopener noreferrer">
+        <div class="floating float-delay-1">
+          <div class="logo-card hover-gold">
+            <img src="assets/images/Prime.png" alt="Miplace Prime" class="store-logo" loading="lazy" width="144" height="144">
+          </div>
+        </div>
+        <span class="store-label label-gold">Miplace Prime</span>
+      </a>
+
+      <a href="https://controle-de-vendas-realme.vercel.app" class="store-link animate-bounce-in delay-200" data-store="realme" aria-label="Acessar Miplace Realme" target="_blank" rel="noopener noreferrer">
+        <div class="floating float-delay-2">
+          <div class="logo-card hover-yellow">
+            <img src="assets/images/Realme.png" alt="Miplace Realme" class="store-logo" loading="lazy" width="144" height="144">
+          </div>
+        </div>
+        <span class="store-label label-yellow">Miplace Realme</span>
+      </a>
+    </div>
+
+    <!-- Linha Central -->
+    <div class="stores-row-center">
+      <a href="https://controle-de-vendas-dom-pedro.vercel.app" class="store-link animate-bounce-in delay-300" data-store="honor" aria-label="Acessar Miplace Honor" target="_blank" rel="noopener noreferrer">
+        <div class="floating float-delay-3">
+          <div class="logo-card hover-blue">
+            <img src="assets/images/Honor.png" alt="Miplace Honor" class="store-logo" loading="lazy" width="144" height="144">
+          </div>
+        </div>
+        <span class="store-label label-blue">Miplace Honor</span>
+      </a>
+    </div>
+
+    <!-- Linha Inferior -->
+    <div class="stores-row">
+      <a href="https://controle-de-vendas-kassouf.vercel.app" class="store-link animate-bounce-in delay-400" data-store="kassouf" aria-label="Acessar Miplace Kassouf" target="_blank" rel="noopener noreferrer">
+        <div class="floating float-delay-4">
+          <div class="logo-card hover-orange">
+            <img src="assets/images/Kassouf.png" alt="Miplace Kassouf" class="store-logo" loading="lazy" width="144" height="144">
+          </div>
+        </div>
+        <span class="store-label label-orange">Miplace Kassouf</span>
+      </a>
+
+      <a href="https://controle-de-vendas-premium.vercel.app" class="store-link animate-bounce-in delay-500" data-store="premium" aria-label="Acessar Miplace Premium" target="_blank" rel="noopener noreferrer">
+        <div class="floating float-delay-5">
+          <div class="logo-card hover-gold">
+            <img src="assets/images/Premium.png" alt="Miplace Premium" class="store-logo" loading="lazy" width="144" height="144">
+          </div>
+        </div>
+        <span class="store-label label-gold">Miplace Premium</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Fim do conteúdo principal -->
+</main>
+
+<!-- Fallback para JavaScript desabilitado -->
+<noscript>
+  <div class="noscript-warning">
+    <h2>Javascript Necessário</h2>
+    <p>Para acessar o sistema de controle de vendas, por favor ative o JavaScript no seu navegador.</p>
+  </div>
+</noscript>
+
+<!-- JavaScript Local -->
+<script src="js/main.js"></script>
+</body>
+</html>
