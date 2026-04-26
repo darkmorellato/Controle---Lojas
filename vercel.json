@@ -17,6 +17,10 @@
         {
           "key": "Cache-Control",
           "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Service-Worker-Allowed",
+          "value": "/"
         }
       ]
     },
@@ -33,6 +37,10 @@
       "source": "/(.*).css",
       "headers": [
         {
+          "key": "Content-Type",
+          "value": "text/css"
+        },
+        {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
         }
@@ -41,6 +49,10 @@
     {
       "source": "/(.*).js",
       "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        },
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
@@ -51,6 +63,10 @@
       "source": "/(.*).png",
       "headers": [
         {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
+        {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
         }
@@ -58,5 +74,11 @@
     }
   ],
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/sw.js",
+      "dest": "/sw.js"
+    }
+  ]
 }
